@@ -1,0 +1,18 @@
+.table0 {
+border-collapse: collapse;
+}
+
+.table0 th,
+.table0 td {
+    border: 0.2rem solid #020000;
+    background-color: aqua;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.table0 th {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #5384ef;
+    color: rgb(190, 236, 24);
+}
