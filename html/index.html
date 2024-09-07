@@ -42,6 +42,21 @@
     <button onclick="backColor(red)" id="columnBackgroundRed">بک قرمز</button>
   </div>
   <div class="box">
+    <button class="button is-warning" onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+  </div>
+  <div class="box"></div>
+  <input class="input" type="text" onchange="onchangeFunc()"></input>
+  </div>
+
+  <select id="grade" onchange="onchangeGrade()">
+    <option value="First grade">First grade</option>
+    <option value="Second grade">Second grade</option>
+    <option value="Third grade">Third grade</option>
+    <option value="Fourth grade">Fourth grade</option>
+  </select>
+
+  <div class="box">
     <p> First line (hide with double click!) </p>
     <p id="p1">mouseenter example</p>
   </div>
