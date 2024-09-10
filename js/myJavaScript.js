@@ -90,7 +90,7 @@ class student {
     let date = new Date();
     let year = date.getFullYear();
     let result = year - this.age;
-    console.log(result);
+    console.log(this.name + ": " + result);
   }
 }
 
@@ -98,6 +98,8 @@ let student1 = new student ("Ali", 17);
 student1.birthYear();
 
 try {
+  let temp = null;
+  temp.birthYear();
   console.log("Done!");
 } catch (error) {
   console.log("Error!"); // ignored
