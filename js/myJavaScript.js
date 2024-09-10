@@ -96,3 +96,9 @@ class student {
 
 let student1 = new student ("Ali", 17);
 student1.birthYear();
+
+try {
+  console.log("Done!");
+} catch (error) {
+  console.log("Error!"); // ignored
+}
