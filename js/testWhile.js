@@ -1,19 +1,19 @@
-var num = 1; 
-while (num<5) {
+var num = 1;
+while (num < 5) {
     console.log(num);
     num++;
 }
 
 var serialNumber = 29;
-while (serialNumber <= 100){
-    if( serialNumber % 7 == 0){
+while (serialNumber <= 100) {
+    if (serialNumber % 7 == 0) {
         console.log(serialNumber);
     }
     serialNumber++;
 }
 
-var sum = 0 , i = 100;
-while( i <= 500){
+var sum = 0, i = 100;
+while (i <= 500) {
     sum += i;
     i++;
 }
