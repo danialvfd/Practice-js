@@ -14,12 +14,11 @@
 
 <body>
     <div>
-        <button class="button is-primary" onclick="print()">کلیک کن!</button>
-        <button class="button" onclick="sum()">جمع</button>
+        <button class="button is-primary" id="printbuttom">کلیک کن!</button>
+        <button class="button" id="sumButtom">جمع</button>
     </div>
     <div>
-        <h2 onmouseover="printMyName()">موس هاور</h2>
-        <span onmouseout="printMyName()">خروج موس</span>
+        <h2 id="mouseover">موس هاور</h2>
     </div>
     <div>
         <input type="text" id="namepanel"> 
@@ -31,6 +30,9 @@
             <option>reza</option>
             <option>emad</option>
         </select>
+    </div>
+    <div class="box">
+        <input type="text"  id="focusTest">
     </div>
     <script src="../js/testEvents.js">    </script>
 </body>

@@ -1,5 +1,9 @@
 function main() {
     _onChangeNamePanel();
+    _printButtom();
+    _sumButtom();
+    _mouseoverTest();
+    _focusTest();
 }
 
 function _onChangeNamePanel() {
@@ -9,15 +13,41 @@ function _onChangeNamePanel() {
     });
 }
 
-function print() {
-    console.log("hi")
+function _printButtom() {
+    var printButtom = document.getElementById("printbuttom");
+    printButtom.addEventListener("click", (e) => {
+        console.log("hi");
+    });
+
 }
 
-function sum() {
-    console.log(4 + 2);
+function _sumButtom() {
+    var SumButtom = document.getElementById("sumButtom");
+    SumButtom.addEventListener("click", (e) => {
+        console.log(4 + 2);
+    });
+
 }
 
-function printMyName(eventTemp) {
+function _mouseoverTest() {
+    var mouseover1 = document.getElementById("mouseover");
+    mouseover1.addEventListener("mouseover", (e) => {
+        console.log("test mouseover");
+    });
+
+}
+
+
+function _focusTest() {
+    var focusTest = document.getElementById("focusTest");
+    focusTest.addEventListener("focus", (e) => {
+        focusTest.style.background = "yellow";
+    });
+
+}
+
+
+function _printMyName(eventTemp) {
     console.log("danial")
 }
 
