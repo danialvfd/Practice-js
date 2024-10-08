@@ -7,7 +7,6 @@ function multiply(x, y) {
     return x * y;
 }
 
-// استفاده به عنوان ورودی 
 function applyOperation(func, a, b) {
     const result = func(a, b);
     console.log(result);
@@ -15,3 +14,5 @@ function applyOperation(func, a, b) {
 
 applyOperation(add, 5, 3);  
 applyOperation(multiply, 5, 10);
+
+applyOperation((x, y) => x * y, 5, 10000);

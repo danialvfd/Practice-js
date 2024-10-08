@@ -34,4 +34,6 @@ function _sortAutomatic() {
     num.sort((a, b) => a - b);
 }
 
+
+
 main();
