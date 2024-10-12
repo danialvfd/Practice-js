@@ -4,8 +4,9 @@ function main() {
     _findItemManualy(30);
     _findItemAutomatic(-3);
     _sortAutomatic();
+    _keydownSearch();
     _sortManual();
-    console.log(num)
+    console.log(num);
 }
 
 function _findItemManualy(item) {
@@ -35,7 +36,23 @@ function _sortAutomatic() {
     num.sort((a, b) => a - b);
 }
 
-function _sortManual(num) {
+function _keydownSearch() {
+    var numberPanel = document.getElementById("numberSearch");
+    numberPanel.addEventListener("keydown", (e) => {
+        if (e.code === 'Enter' || e.code === 'NumpadEnter') {
+            var inputNumber = Number(e.key);   
+            var isFound = num.includes(inputNumber);
+            if (isFound) {
+                alert ("found!");
+            } else {
+                alert ("not found!");
+            }
+        }
+    });
+
+}
+
+function _sortManual() {
     var length = num.length;
     for (var i = 0; i < length - 1; i++) {
         for (var j = 0; j < length - i - 1; j++) {
@@ -46,7 +63,6 @@ function _sortManual(num) {
             }
         }
     }
-    return num;
 }
 
 main();
