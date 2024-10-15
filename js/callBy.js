@@ -1,14 +1,20 @@
-var a = 5;
-var b;
-b = a;
-a = 3;
-console.log(a);
-console.log(b);
+function modifyValue(x) {
+    x = 10; // Changing the value of x
+    console.log("Inside function:", x); // Outputs: 10
+}
 
-// call by reference
-var c = { greeting: 'Welcome' };
-var d;
-d = c;
-c.greeting = 'not welcome!';
-console.log(c);
-console.log(d);
+let aTemp = 5;
+console.log("Before function call:", aTemp); // Outputs: 5
+modifyValue(aTemp);
+console.log("After function call:", aTemp); // Outputs: 5
+
+///////////////////
+
+function modifyObject(obj) {
+    obj.name = "John"; // Modifying the property of obj
+}
+
+let person = { name: "Alice" };
+console.log("Before function call:", person.name); // Outputs: Alice
+modifyObject(person);
+console.log("After function call:", person.name); // Outputs: John
