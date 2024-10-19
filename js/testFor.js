@@ -8,3 +8,7 @@ for (var f = 10; f <= 50; f++){
 }
 console.log(sum);
 
+const fruits = ["apple", "orange", "cherry"];
+fruits.forEach((fruit) => {
+    console.log(fruit);
+});
