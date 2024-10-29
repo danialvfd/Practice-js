@@ -11,7 +11,7 @@ class Parent {
 class Child extends Parent {
     constructor (name, lastName, hairColor, eyeColor){
         super(name, lastName)     // method super constructor father seda mizanad
-        this.hairColor = hairColor;
+        this.hairColor = hairColor; 
         this.eyeColor = eyeColor;
     }
 }
@@ -20,5 +20,5 @@ var parent = new Parent ("ali", "vafaei");
 var child = new Child ("reza", "vafaei", "black", "green");
 
 child.firstMethod(child.lastName);
-console.log(ali);
+console.log(parent);
 console.log(child);

@@ -13,8 +13,15 @@ const DaysOfWeek = (function () {
             return days[name];
         }
     };
-})();
+});
 
 // تغییر نمی کند
-DaysOfWeek.SUNDAY = 7; 
+DaysOfWeek.SUNDAY = 7;
 console.log(DaysOfWeek.get('SUNDAY'));
+
+const Directions = Object.freeze({
+    UP: 'Up',
+    DOWN: 'Down',
+    LEFT: 'Left',
+    RIGHT: 'Right'
+});

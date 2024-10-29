@@ -1,28 +1,26 @@
-//
-const fruits = new Map([
+const fruits0 = new Map([
     ["apples", 100],
     ["bananas", 200],
     ["oranges", 300]
   ]);
 
   // اضافه کردن المان یا تغییر مقدار با set
-fruits.set("apples", 500);
-fruits.set("bananas", 300);
-fruits.set("oranges", 200);
+fruits0.set("apples", 500);
+fruits0.set("bananas", 300);
+fruits0.set("oranges", 200);
 
-document.getElementById("fruits").innerHTML = fruits.get("apples");
 
 // size yek propery
-console.log(fruits.size);
+console.log(fruits0.size);
 
 // clear برای پاک کردن تمام المان ها
 // برای حذف یک المان
 // apple yek key hast
-fruits.delete("apples");
+fruits0.delete("apples");
 
-console.log(fruits.size);
+console.log(fruits0.size);
 
 // چک کردن داشتن یک المان
-console.log(fruits.has("oranges"));
+console.log(fruits0.has("oranges"));
 // item ham mitoone paramet va variable bashad    ***  soal mosahebe ***
-fruits.forEach(item => console.log("value: " , item.valueOf()));
+fruits0.forEach(item => console.log("value: " , item.valueOf()));
