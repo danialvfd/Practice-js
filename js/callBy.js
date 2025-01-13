@@ -7,7 +7,7 @@ let aTemp = 5;
 console.log("Before function call:", aTemp); // Outputs: 5
 modifyValue(aTemp);
 console.log("After function call:", aTemp); // Outputs: 5
-
+modifyValue(aTemp);
 ///////////////////  object
 
 function modifyObject(obj) {
@@ -26,9 +26,9 @@ function modifyArray(temps) {
 }
 
 var nums = [1, 2, 5, -3, 0, 50];
-console.log("Before function call:", nums ); // Outputs: Alice
+console.log("Before function call:", nums ); 
 modifyArray(nums);
-console.log("After function call:", nums); // Outputs: John
+console.log("After function call:", nums);
 
 /////////////////// string call by value (primitive)
 
@@ -37,6 +37,6 @@ function modifyString(temps) {
 }
 
 let stringsTemp = "abcdefg"; 
-console.log("Before function call:", stringsTemp ); // Outputs: Alice
+console.log("Before function call:", stringsTemp );
 modifyString(stringsTemp);
-console.log("After function call:", stringsTemp); // Outputs: John
+console.log("After function call:", stringsTemp);
