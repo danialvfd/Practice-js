@@ -7,11 +7,11 @@ function ShowMessage() {
   alert("درخواست شما ثبت شد");
 }
 
-$(document).ready(function () {
-  $("th, td").click(function () {
-    $(this).hide();
+  $(document).ready(function () {
+    $("th, td").click(function () {
+      $(this).hide();
+    });
   });
-});
 
 $("p").dblclick(function () {
   $(this).hide();
